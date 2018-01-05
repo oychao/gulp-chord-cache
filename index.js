@@ -7,7 +7,6 @@ chord.filter = function () {
     return through.obj(function (file, enc, callback) {
         let contents = file.contents.toString();
 
-        // do sth
         const cachedFile = chord.caches[file.path];
         if (typeof cachedFile !== undefined && cachedFile === contents) {
             file.cached = true;
@@ -27,7 +26,6 @@ chord.join = function () {
     return through.obj(function (file, enc, callback) {
         let contents = file.contents.toString();
 
-        // do sth
         if (file.cached) {
             contents = chord.caches[file.path];
         }
