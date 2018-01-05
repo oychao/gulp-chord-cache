@@ -1,29 +1,21 @@
 const through = require('through2');
 // const PluginError = require('plugin-error');
 
-const chord = { }
+const chord = { caches: {} }
 
 chord.filter = function () {
     return through.obj(function (file, enc, callback) {
         let contents = file.contents.toString();
-        
+
         // do sth
-        if (contents.indexOf('2') === -1) {
-            file.caches = contents;
+        const cachedFile = chord.caches[file.path];
+        if (typeof cachedFile !== undefined && cachedFile === contents) {
+            file.cached = true;
             contents = '';
+        } else {
+            file.cached = false;
+            chord.caches[file.path] = contents;
         }
-        
-        file.contents = Buffer.from(contents, enc);
-        this.push(file);
-        callback();
-    });
-};
-
-chord.test = function () {
-    return through.obj(function (file, enc, callback) {
-        let contents = file.contents.toString();
-
-        contents = contents.toUpperCase();
 
         file.contents = Buffer.from(contents, enc);
         this.push(file);
@@ -36,8 +28,8 @@ chord.join = function () {
         let contents = file.contents.toString();
 
         // do sth
-        if (file.caches) {
-            contents = file.caches
+        if (file.cached) {
+            contents = chord.caches[file.path];
         }
 
         console.log(contents);

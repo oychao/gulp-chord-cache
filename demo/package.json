@@ -6,6 +6,9 @@
   "scripts": {
     "build": "gulp"
   },
+  "dependencies": {
+    "through2": "^2.0.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.36",
     "@babel/preset-env": "^7.0.0-beta.36",
