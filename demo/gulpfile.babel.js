@@ -6,5 +6,5 @@ gulp.task('default', function () {
         'f1.txt',
         'f2.txt',
         'f3.txt',
-    ], { cwd: 'files' }).pipe(cache.filter()).pipe(cache.join());
+    ], { cwd: 'files' }).pipe(cache.filter()).pipe(cache.test()).pipe(cache.join());
 });
