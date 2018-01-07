@@ -1,8 +1,8 @@
 import gulp from 'gulp';
 
 import chord from '../index';
-import upperCase from './foo.plugin';
-import output from './bar.plugin';
+import upperCase from './demo-plugins/foo.plugin';
+import output from './demo-plugins/bar.plugin';
 
 gulp.task('build', function () {
     return gulp.src([
