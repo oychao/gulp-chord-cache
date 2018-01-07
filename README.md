@@ -4,7 +4,7 @@ Cache files in gulp pipe.
 
 ## Why gulp-chord-cache
 
-Normally in gulp watch tasks, if one single file changed every watched files will be handled in a triggered task.
+Normally in gulp watch tasks, if one single file changed every watched file will be handled in a triggered task.
 
 For example, compiling all files is unnecessary and inefficient because only one file is changed in most cases.
 
