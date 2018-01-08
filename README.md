@@ -18,6 +18,8 @@ You may ask how do unchanged files get restored at the exit point, gulp-chord-ca
 
 ## How to use
 
+Check the [demo][1] here.
+
 Install gulp-chord-cache.
 
 ```bash
