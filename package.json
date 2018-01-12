@@ -1,6 +1,21 @@
 {
-  "name": "gulp-cache-chord",
-  "version": "1.0.0",
+  "name": "gulp-chord-cache",
+  "version": "1.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "repository": "https://github.com/oychao/gulp-chord-cache.git",
+  "author": "Ouyang Chao <chao@ouyang.io>",
+  "license": "WTFPL",
+  "scripts": {},
+  "dependencies": {
+    "plugin-error": "^0.1.2",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "gulp",
+    "cache",
+    "gulp cache",
+    "gulp chord cache",
+    "gulp-chord-cache"
+  ]
 }
