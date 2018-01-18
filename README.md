@@ -29,11 +29,11 @@ yarn add gulp-chord-cache
 Configure packages.json and gulpfile.js
 
 ```json
-    ...
-    "scripts": {
-        "build": "gulp"
-    },
-    ...
+...
+"scripts": {
+    "build": "gulp"
+},
+...
 ```
 
 ```javascript
