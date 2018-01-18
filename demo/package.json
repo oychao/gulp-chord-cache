@@ -13,6 +13,7 @@
     "@babel/core": "^7.0.0-beta.36",
     "@babel/preset-env": "^7.0.0-beta.36",
     "@babel/register": "^7.0.0-beta.36",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-chord-cache": "^1.0.1"
   }
 }

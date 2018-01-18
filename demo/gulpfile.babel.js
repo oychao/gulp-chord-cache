@@ -1,6 +1,6 @@
 import gulp from 'gulp';
+import chord from 'gulp-chord-cache';
 
-import chord from '../index';
 import upperCase from './demo-plugins/foo.plugin';
 import output from './demo-plugins/bar.plugin';
 
