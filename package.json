@@ -1,6 +1,6 @@
 {
   "name": "gulp-chord-cache",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "https://github.com/oychao/gulp-chord-cache.git",
   "author": "Ouyang Chao <chao@ouyang.io>",
