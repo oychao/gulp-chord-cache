@@ -2,6 +2,8 @@
 
 Cache files in gulp pipe.
 
+[![Build Status](https://travis-ci.org/oychao/gulp-chord-cache.svg?branch=master)](https://travis-ci.org/oychao/gulp-chord-cache)
+
 ## Why gulp-chord-cache
 
 Normally in gulp watch tasks, if one single file changed every watched file will be handled in a triggered task.
